@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Um novo conceito de QI">
+    <title>Quadro Interativo GZ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<link rel="icon" href="R.ico" type="image/x-icon">
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-buttons">
+            <a href="https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=An%C3%A1lise+de+Risco+-+Operador+de+Produ%C3%A7%C3%A3o+I+de+Feminine+Care.pdf&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=907465&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=194568"  target="_blank">
+                <button class="modal-button">Operadores I</button>
+            </a>
+            <a href="https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=JA-07854+An%C3%A1lise+de+Risco+-+Operador+de+Produ%C3%A7%C3%A3o+II+de+Feminine+Care.PDF&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=547740&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=194592" target="_blank">
+                <button class="modal-button">Operadores II</button>
+            </a>
+            <a href="https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=An%C3%A1lise+de+Risco+Operador+de+Produ%C3%A7%C3%A3o+III+de+Feminine+Care.PDF&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=579354&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=194621" target="_blank">
+                <button class="modal-button">Operadores III</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+    }
+
+    // Adicione um evento ao botão "PRFA Operadores"
+    document.querySelector('a[href=""]').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que o link siga o href
+        openModal(); // Abre o modal
+    });
+
+    // Fecha o modal se o usuário clicar fora dele
+    window.onclick = function(event) {
+        var modal = document.getElementById("modal");
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+
+
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img class="header-image" src="new_K-C_logo_blue-removebg-preview.png" alt="Logo">
+            <h1 class="title">Quadro Interativo Solução GZ</h1>
+            <a class="header-menu-item" target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/">Portal de Melhoria Continua</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Pesquisar" class="search-input">
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="main-section">
+            <div class="column">
+                <a class="category">QUALIDADE</a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/G394/Lists/Soluo%20WW/NewForm.aspx?Source=https%3A%2F%2Fkimberlyclark.sharepoint.com%2Fsites%2FG394%2FSitePages%2FSolu%C3%A7%C3%A3oWW.aspx&id=%2Fsites%2FG394%2FLists%2FSoluo%20WW">
+                    <button class="button">Pré Uso</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES">
+                    <button class="button">Autonomous Care</button>
+                </a>
+            </div>
+            <div class="column">
+                <a class="category">PRODUÇÃO</a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/11541/Procedimentos-Solu%25C3%25A7%25C3%25A3o-GZ">
+                    <button class="button">Procedimentos</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence&CT=1719324171081&OR=OWA%2DNT%2DMail&CID=bc90d4f4%2D5be1%2Dd14c%2D9a0d%2D672c58f04020">
+                    <button class="button">Plano de Produção</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Ações Diárias</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Reunião Diária</button>
+                </a>
+                </div>
+            
+            <div class="column">
+                <a class="category">PROCESSO</a>
+                <a target="_blank" href="https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1070901&ETQ$ORIGINAL_DOC_ID=525522">
+                    <button class="button">Plano de Controle</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/829/GZ---Process-Project">
+                    <button class="button">PI Vision</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Matriz de Habilidades</button>
+                </a>
+            </div>
+            <div class="column">
+                <a class="category">PESSOAS</a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx">
+                    <button class="button">Reconhecimento</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FWIPES%2FEscala%20de%20folga%202024%2Epdf&parent=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FWIPES">
+                    <button class="button">Escala de Folga</button>
+                </a>
+                <a target="_balnk" href="https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a%2F2024&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c">
+                    <button class="button">Diálogo de Segurança</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B55B4F8FC-2491-4901-8B73-1864FE4373F3%7D&file=ESCALA%202021.xlsx&action=default&mobileredirect=true">
+                    <button class="button">Escala de Férias</button>
+                </a>
+            </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer-image" src="ser_kc_logo-removebg.png" alt="Rodapé">
+    </footer>
+
+    <script>
+        function removeSpecialChars(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s]/gi, '').toUpperCase();
+        }
+
+        function searchFunction() {
+            var input, filter, buttons, text;
+            input = document.getElementById('searchInput');
+            filter = removeSpecialChars(input.value.trim());
+            buttons = document.getElementsByClassName('button');
+
+            for (var i = 0; i < buttons.length; i++) {
+                text = removeSpecialChars(buttons[i].textContent || buttons[i].innerText);
+                if (text.indexOf(filter) > -1) {
+                    buttons[i].style.display = "block";
+                } else {
+                    buttons[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
